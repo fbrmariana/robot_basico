@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231123 12:21:53.245" rpa="false" schemaversion="4">
+<suite id="s1" name="exemploVariaveis" source="C:\Projetos\RobotFramework\Exemplo_Lista_Dicionario_Variaveis\exemploVariaveis.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="13">
+<kw name="Uma keyword qualquer 01">
+<kw name="Log" library="BuiltIn">
+<arg>${SIMPLES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231123 12:21:53.274" level="INFO">Vamos ver os tipos de váriaveis no robot</msg>
+<status status="PASS" starttime="20231123 12:21:53.274" endtime="20231123 12:21:53.274"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Essa tem que ser maça: ${FRUTAS[2]} e essa tem que ser morango: ${FRUTAS[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231123 12:21:53.275" level="INFO">Essa tem que ser maça: maça e essa tem que ser morango: morango</msg>
+<status status="PASS" starttime="20231123 12:21:53.274" endtime="20231123 12:21:53.275"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Nome: ${PESSOA.nome} e email: ${PESSOA.email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231123 12:21:53.276" level="INFO">Nome: Mariana Leite e email: mari@teste.com</msg>
+<status status="PASS" starttime="20231123 12:21:53.275" endtime="20231123 12:21:53.276"/>
+</kw>
+<status status="PASS" starttime="20231123 12:21:53.274" endtime="20231123 12:21:53.276"/>
+</kw>
+<status status="PASS" starttime="20231123 12:21:53.273" endtime="20231123 12:21:53.277"/>
+</test>
+<doc>Exemplo tipos de variaveis</doc>
+<status status="PASS" starttime="20231123 12:21:53.247" endtime="20231123 12:21:53.279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="exemploVariaveis">exemploVariaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

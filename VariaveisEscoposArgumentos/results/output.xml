@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231212 11:27:32.346" rpa="false" schemaversion="4">
+<suite id="s1" name="Email Customizado" source="C:\Projetos\RobotFramework\VariaveisEscoposArgumentos\Email_Customizado.robot">
+<test id="s1-t1" name="Gerar e-mail customizado e aleatório" line="10">
+<kw name="Monta e-mail aleatório">
+<var>${E-MAIL}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<kw name="Generate Random String" library="String">
+<var>${ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20231212 11:27:32.440" level="INFO">${ALEATORIA} = Ns6bz2WF</msg>
+<status status="PASS" starttime="20231212 11:27:32.439" endtime="20231212 11:27:32.440"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${EMAIL_FINAL}</var>
+<arg>${NOME}</arg>
+<arg>${SOBRENOME}${ALEATORIA}@teste.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231212 11:27:32.440" level="INFO">${EMAIL_FINAL} = ['Mariana', 'LeiteNs6bz2WF@teste.com']</msg>
+<status status="PASS" starttime="20231212 11:27:32.440" endtime="20231212 11:27:32.440"/>
+</kw>
+<msg timestamp="20231212 11:27:32.441" level="INFO">${E-MAIL} = ['Mariana', 'LeiteNs6bz2WF@teste.com']</msg>
+<status status="PASS" starttime="20231212 11:27:32.438" endtime="20231212 11:27:32.441"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${E-MAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231212 11:27:32.442" endtime="20231212 11:27:32.442"/>
+</kw>
+<status status="PASS" starttime="20231212 11:27:32.437" endtime="20231212 11:27:32.443"/>
+</test>
+<doc>Exemplo de escopo de variáveis: GLOBAIS, SUITE, TESTE (test case) e LOCAL (keyword)</doc>
+<status status="PASS" starttime="20231212 11:27:32.349" endtime="20231212 11:27:32.446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Email Customizado">Email Customizado</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

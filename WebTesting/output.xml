@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231120 15:28:13.401" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Testes Gherkin Bdd" source="C:\Projetos\RobotFramework\WebTesting\amazon_testes_gherkin_bdd.robot">
+<test id="s1-t1" name="Caso de teste 02 - Pesquisa de um livro" line="23">
+<doc>Esse teste verifica a busca de um livro</doc>
+<tag>busca livro</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20231120 15:28:13.691" endtime="20231120 15:28:13.692">Test cannot be empty.</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20231120 15:28:13.403" endtime="20231120 15:28:13.694"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">busca livro</stat>
+<stat pass="0" fail="1" skip="0">lista_busca</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon Testes Gherkin Bdd">Amazon Testes Gherkin Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
